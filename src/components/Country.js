@@ -1,8 +1,15 @@
+import '../index.css'
+
 const Country = ({country}) => {
 
     return (  
-        <div>
-            <p>{country.name.common}</p>
+        <div className="country-box">
+            <p><b>{country.name.common}</b>  {country.flag}</p>
+            <label>
+                <input type="checkbox" />
+                Check Me Off!
+            </label>
+           
         </div>
     );
 }
