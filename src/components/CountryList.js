@@ -1,8 +1,8 @@
 import Country from "./Country";
 
-const CountryList = ({data}) => {
+const CountryList = ({data, onCheck}) => {
     const countriesInList = data.map(country => {
-        return <Country country={country}/>;
+        return <Country country={country} onCheck={onCheck}/>;
     })
 
     return ( 

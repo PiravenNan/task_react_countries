@@ -15,12 +15,15 @@ const CountryContainer = () => {
         getAllCountries();
     },[])
 
-    console.log(countries.length);
+    const handleCheckboxChange = (country) => {
+        console.log(country.name.common);
+        
+      };
 
     return ( 
         <>
         <h2>Hello World!</h2>
-        {countries.length>0 ? <CountryList data={countries} />: <p>Loading...</p>}
+        {countries.length>0 ? <CountryList data={countries} onCheck={handleCheckboxChange}/>: <p>Loading...</p>}
         </>
      );
 }
