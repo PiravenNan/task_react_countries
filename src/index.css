@@ -16,3 +16,11 @@ code {
   display: flex;
   align-items: center;
 }
+
+.country-list-container {
+  display: flex;
+}
+
+.country-list {
+  margin-right: 10px; 
+}
